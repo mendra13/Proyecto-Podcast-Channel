@@ -194,7 +194,9 @@ main section p {
   clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%); }
 
 #episodes iframe {
-  margin: 10px 0px; }
+  margin: 10px 0px;
+  border: 0px;
+  width: 100%; }
 
 #episodes h2 {
   font-family: 'IBM Plex Sans';
@@ -285,5 +287,73 @@ main section p {
 
   .interviews_grid img {
     width: 100%; } }
+/*topics secction*/
+.topic_icons img {
+  width: 104px;
+  height: 104px; }
+
+.topic_icons {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  gap: 80px;
+  margin-top: 80px;
+  margin-bottom: 40px; }
+
+#topics h3 {
+  margin: 20px 0px; }
+
+#topics h2 {
+  margin: 20px 0px; }
+
+@media screen and (min-width: 1200px) {
+  .topic_icons {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around; } }
+/*lastest news*/
+.latest_news {
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  padding: 50px 0px;
+  clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center; }
+
+.episodes_btn {
+  width: 288px;
+  height: 56px; }
+
+/*footer*/
+footer {
+  display: grid;
+  text-align: center;
+  margin-bottom: 50px; }
+
+.social_networks {
+  display: flex;
+  justify-content: center; }
+
+.social_networks i {
+  padding: 0px 20px;
+  font-size: 28px;
+  color: black; }
+
+.copyright h4 {
+  font-size: 16px;
+  color: black;
+  line-height: 22px;
+  padding: 20px 0px; }
+
+@media screen and (min-width: 1200px) {
+  footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between; }
+
+  .social_networks {
+    display: flex;
+    align-items: center; } }
 
 /*# sourceMappingURL=styles.css.map */
