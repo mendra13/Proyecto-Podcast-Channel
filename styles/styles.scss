@@ -281,11 +281,16 @@ line-height: 22px;
 /*.interviews_grid{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
   font-size: 0px;
 }*/
+.interviews_grid{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  font-size: 0px;
+}
 .interviews_grid img{
-  width: 360px;
+  width: 100%;
 }
 @media screen and (min-width: 1200px){
   .interviews_grid{
@@ -329,16 +334,21 @@ line-height: 22px;
 /*lastest news*/
 .latest_news{
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-  padding: 50px 0px;
+  padding: 80px 0px;
   clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
   display: flex;
   flex-flow: column;
   align-items: center;
   text-align: center;
   }
+  .latest_news h2{
+    padding: 50px 0px;
+  }
 .episodes_btn{
   width: 288px;
   height: 56px;
+  background: #00F3BB;
+  border: 0px;
 }
 /*footer*/
 footer{
