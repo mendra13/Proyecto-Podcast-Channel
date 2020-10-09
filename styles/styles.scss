@@ -204,12 +204,13 @@ margin-top: 20px;
 }
 #episodes iframe{
   margin: 10px 0px;
-  border: 0px;
+  border: none;
   width: 100%;
 }
 #episodes h2{
   font-family: 'IBM Plex Sans';
   font-size: 36px;
+  font-weight: 400;
   color: #FFFFFF;
   letter-spacing: 0;
   line-height: 42px;
@@ -223,6 +224,7 @@ margin-top: 20px;
 #we h2{
   font-family: 'IBM Plex Sans';
   font-size: 36px;
+  font-weight: 400;
   color: #060A24;
   letter-spacing: 0;
   line-height: 42px;
@@ -270,19 +272,15 @@ line-height: 22px;
 #interviews h2{
   font-family: 'IBM Plex Sans';
   font-size: 36px;
-  color: #060A24;
+  color: 060A24;
   letter-spacing: 0;
   line-height: 42px;
+  font-weight: 300;
   margin-top: 80px;
   margin-bottom: 50px;
   margin-left: 20px;
   width: 50px;
 }
-/*.interviews_grid{
-  display: grid;
-  grid-template-columns: 1fr;
-  font-size: 0px;
-}*/
 .interviews_grid{
   display: flex;
   flex-flow: column;
@@ -304,6 +302,15 @@ line-height: 22px;
   .interviews_grid img{
     width: 100%;
   }
+  #interviews h2{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 48px;
+    color: #060A24;
+    letter-spacing: 0;
+    font-weight: 300;
+    margin-top: 0px;
+    width: 100%;
+  }
 }
 /*topics secction*/
 .topic_icons img{
@@ -319,9 +326,21 @@ line-height: 22px;
   margin-bottom: 40px;
 }
 #topics h3{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  color: #060A24;
+  letter-spacing: 0;
+  text-align: center;
   margin: 20px 0px;
 }
 #topics h2{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 36px;
+  color: #060A24;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 42px;
   margin: 20px 0px;
 }
 @media screen and (min-width: 1200px){
@@ -329,6 +348,10 @@ line-height: 22px;
     display: flex;
     flex-flow: row;
     justify-content: space-around;
+  }
+  #topics h2{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 48px;
   }
 }
 /*lastest news*/
@@ -342,13 +365,34 @@ line-height: 22px;
   text-align: center;
   }
   .latest_news h2{
+    width: 288px;
     padding: 50px 0px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 42px;
   }
 .episodes_btn{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #060A24;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 22px;
+  text-transform: uppercase;
   width: 288px;
   height: 56px;
   background: #00F3BB;
   border: 0px;
+}
+@media screen and (min-width: 1200px){
+  .latest_news h2{
+    width: 100%;
+  }
 }
 /*footer*/
 footer{
@@ -366,8 +410,12 @@ footer{
   color: black;
  }
  .copyright h4{
-  font-size: 16px;
-  color: black;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 22px;
   line-height: 22px;
   padding: 20px 0px;
  }
@@ -376,6 +424,7 @@ footer{
     display: flex;
     flex-flow: row;
     justify-content: space-between;
+    padding: 0px 40px;
   }
   .social_networks {
     display: flex;
