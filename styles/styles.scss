@@ -51,18 +51,21 @@ header{
     line-height: 28px;
     display: block;
     font-size: 16px;
+    font-weight: 400;
   }
   .menu a:hover {
     cursor: pointer;
     color: #00F3BB;
     text-decoration: line-through;
-    font-family: 'IBM Plex Mono - Medium', monospace;
+    font-family: 'IBM Plex Mono', monospace;
     line-height: 28px;
+    font-weight: 500;
   }
   .menu a:active {
     font-family: 'IBM Plex Mono';
     font-size: 16px;
     color: rgba(6,10,36,0.56);
+    text-decoration: line-through;
     letter-spacing: 0;
     line-height: 28px;
   }
@@ -73,7 +76,6 @@ header{
       margin: 30px 30px 0;
     }
   }
-  
   .bars {
     display: block;
     width: 25px;
@@ -131,16 +133,15 @@ header{
 main section h1{
   font-family: 'IBM Plex Sans';
   font-size: 36px;
+  font-weight: 400;
   color: #060A24;
   letter-spacing: 0;
   line-height: 42px;
   margin-top: 20px;
+  width: 250px;
 }
 .world{
   text-decoration: line-through;
-}
-.dot{
-  color: #0000EC;
 }
 main section p{
 font-family: 'IBM Plex Mono';
@@ -154,8 +155,9 @@ margin-top: 20px;
   height: 48px;
   width: 100%;
   background-color: #00F3BB;
-  font-family: 'IBM Plex Mono - Medium', monospace;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 18px;
+  font-weight: 500;
   color: #060A24;
   letter-spacing: 0;
   text-align: center;
@@ -163,6 +165,9 @@ margin-top: 20px;
   border: none;
   text-transform: uppercase;
   margin-top: 60px;
+}
+.desktop_text{
+  display: none;
 }
 @media screen and (min-width: 1200px){
   .welcome_button{
@@ -173,20 +178,25 @@ margin-top: 20px;
     width: 60%;
     margin-top: 40px;
   }
-  /*section div p::before{
-    content: "El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.";
-  }*/
   .welcome{
     margin-left: 60px;
   }
   section div h1{
     font-size: 64px;
+    width: 100%;
+  }
+  .dot{
+    color: #0000EC;
+  }
+  .mobile_text{
+    display: none;
+  }
+  .desktop_text{
+    display: block;
   }
 }
 .welcome_button:hover{
   background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
-  font-family: 'IBM Plex Mono - Medium', monospace;
-  font-size: 18px;
   color: #FFFFFF;
   letter-spacing: 0;
   text-align: center;
@@ -363,7 +373,7 @@ line-height: 22px;
   flex-flow: column;
   align-items: center;
   text-align: center;
-  }
+}
   .latest_news h2{
     width: 288px;
     padding: 50px 0px;
@@ -375,23 +385,36 @@ line-height: 22px;
     text-align: center;
     line-height: 42px;
   }
-.episodes_btn{
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  color: #060A24;
-  letter-spacing: 0;
-  text-align: center;
-  line-height: 22px;
-  text-transform: uppercase;
-  width: 288px;
-  height: 56px;
-  background: #00F3BB;
-  border: 0px;
-}
+  .episodes_btn{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+    text-transform: uppercase;
+    width: 288px;
+    height: 56px;
+    background: #00F3BB;
+    border: none;
+  }
+  .episodes_btn:hover{
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    cursor: pointer;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 24px;
+  }
 @media screen and (min-width: 1200px){
   .latest_news h2{
     width: 100%;
+  }
+  .episodes_btn{
+    width: 345px;
   }
 }
 /*footer*/
@@ -405,8 +428,8 @@ footer{
   justify-content: center;
 }
 .social_networks i{
-  padding: 0px 20px;
-  font-size: 28px;
+  padding: 0px 13px;
+  font-size: 16px;
   color: black;
  }
  .copyright h4{
@@ -426,9 +449,15 @@ footer{
     justify-content: space-between;
     padding: 0px 40px;
   }
-  .social_networks {
+  .social_networks{
     display: flex;
     align-items: center;
+  }
+  .copyright h4{
+    font-size: 16px;
+  }
+  .social_networks i{
+    font-size: 18px; 
   }
 }
   
