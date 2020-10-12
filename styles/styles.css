@@ -185,6 +185,15 @@ main section p {
   text-transform: uppercase;
   margin-top: 60px; }
 
+.welcome_button:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 24px;
+  border: none;
+  cursor: pointer; }
+
 .desktop_text {
   display: none; }
 
@@ -213,15 +222,6 @@ main section p {
   .desktop_text {
     display: block;
     font-size: 16px; } }
-.welcome_button:hover {
-  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
-  color: #FFFFFF;
-  letter-spacing: 0;
-  text-align: center;
-  line-height: 24px;
-  border: none;
-  cursor: pointer; }
-
 /*episodes*/
 #episodes {
   padding: 20px;
