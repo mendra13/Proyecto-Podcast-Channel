@@ -50,7 +50,7 @@ header {
             justify-content: flex-end; } }
 .menu li {
   position: relative;
-  padding: 0 20px;
+  padding: 0 10px;
   text-transform: uppercase;
   color: #ffffff; }
 
@@ -85,7 +85,7 @@ header {
   .menu a {
     display: inline-block;
     color: #060A24;
-    margin: 30px 30px 0; } }
+    margin: 30px 20px 0; } }
 .bars {
   display: block;
   width: 25px;
@@ -163,11 +163,12 @@ main section h1 {
 
 main section p {
   font-family: 'IBM Plex Mono';
-  font-size: 16px;
+  font-size: 14px;
   color: #060A24;
   letter-spacing: 0;
   line-height: 24px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  text-align: justify; }
 
 .welcome_button {
   height: 48px;
@@ -210,7 +211,8 @@ main section p {
     display: none; }
 
   .desktop_text {
-    display: block; } }
+    display: block;
+    font-size: 16px; } }
 .welcome_button:hover {
   background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
   color: #FFFFFF;
@@ -295,7 +297,7 @@ main section p {
     padding: 100px 0; }
 
   #episodes .episodes_container h2 {
-    margin-left: 80px; }
+    margin-left: 180px; }
 
   #we {
     display: grid;
@@ -354,7 +356,8 @@ main section p {
     letter-spacing: 0;
     font-weight: 300;
     margin-top: 0px;
-    width: 100%; } }
+    width: 100%;
+    margin-left: 180px; } }
 /*topics secction*/
 .topic_icons img {
   width: 104px;
@@ -377,7 +380,8 @@ main section p {
   color: #060A24;
   letter-spacing: 0;
   text-align: center;
-  margin: 20px 0px; }
+  margin: 20px 0px;
+  width: 220px; }
 
 #topics h2 {
   font-family: 'IBM Plex Sans', sans-serif;
@@ -386,7 +390,7 @@ main section p {
   font-weight: 400;
   letter-spacing: 0;
   line-height: 42px;
-  margin: 20px 0px; }
+  margin: 20px 20px; }
 
 @media screen and (min-width: 1200px) {
   .topic_icons {
@@ -397,12 +401,15 @@ main section p {
     -webkit-box-direction: normal;
         -ms-flex-flow: row;
             flex-flow: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 40px; }
 
   #topics h2 {
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 48px; } }
+    font-size: 48px;
+    margin-left: 180px; } }
 /*lastest news*/
 .latest_news {
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
@@ -425,7 +432,7 @@ main section p {
   width: 288px;
   padding: 50px 0px;
   font-family: 'IBM Plex Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 36px;
   color: #FFFFFF;
   letter-spacing: 0;
@@ -458,7 +465,8 @@ main section p {
 
 @media screen and (min-width: 1200px) {
   .latest_news h2 {
-    width: 100%; }
+    width: 100%;
+    font-size: 48px; }
 
   .episodes_btn {
     width: 345px; } }

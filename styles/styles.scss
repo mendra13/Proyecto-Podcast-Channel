@@ -38,7 +38,7 @@ header{
   }
   .menu li {
     position: relative;
-    padding: 0 20px;
+    padding: 0 10px;
     text-transform: uppercase;
     color: #ffffff;
   }
@@ -73,7 +73,7 @@ header{
     .menu a {
       display: inline-block;
       color: #060A24;
-      margin: 30px 30px 0;
+      margin: 30px 20px 0;
     }
   }
   .bars {
@@ -145,11 +145,12 @@ main section h1{
 }
 main section p{
 font-family: 'IBM Plex Mono';
-font-size: 16px;
+font-size: 14px;
 color: #060A24;
 letter-spacing: 0;
 line-height: 24px;
 margin-top: 20px;
+text-align: justify;
 }
 .welcome_button{
   height: 48px;
@@ -193,6 +194,10 @@ margin-top: 20px;
   }
   .desktop_text{
     display: block;
+    font-size: 16px;
+  }
+  header{
+    
   }
 }
 .welcome_button:hover{
@@ -269,7 +274,7 @@ line-height: 22px;
     padding: 100px 0;
   }
   #episodes .episodes_container h2{
-    margin-left: 80px;
+    margin-left: 180px;
   }
   #we{
     display: grid;
@@ -320,6 +325,7 @@ line-height: 22px;
     font-weight: 300;
     margin-top: 0px;
     width: 100%;
+    margin-left: 180px;
   }
 }
 /*topics secction*/
@@ -343,6 +349,7 @@ line-height: 22px;
   letter-spacing: 0;
   text-align: center;
   margin: 20px 0px;
+  width: 220px;
 }
 #topics h2{
   font-family: 'IBM Plex Sans', sans-serif;
@@ -351,17 +358,19 @@ line-height: 22px;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 42px;
-  margin: 20px 0px;
+  margin: 20px 20px;
 }
 @media screen and (min-width: 1200px){
   .topic_icons{
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 40px;
   }
   #topics h2{
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 48px;
+    margin-left: 180px;
   }
 }
 /*lastest news*/
@@ -378,7 +387,7 @@ line-height: 22px;
     width: 288px;
     padding: 50px 0px;
     font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 36px;
     color: #FFFFFF;
     letter-spacing: 0;
@@ -412,6 +421,7 @@ line-height: 22px;
 @media screen and (min-width: 1200px){
   .latest_news h2{
     width: 100%;
+    font-size: 48px;
   }
   .episodes_btn{
     width: 345px;
