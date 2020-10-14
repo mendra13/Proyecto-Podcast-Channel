@@ -12,7 +12,7 @@ header{
 }
 /* Menu hamburguesa */
 .menu ul {
-    width: 95%;
+    width: 90%;
     position: absolute;
     top: 90px;
     left: 15px;
@@ -24,21 +24,21 @@ header{
   @media screen and (min-width: 1200px) {
     .logo{
         margin-top: 30px;
+        margin-left: 70px;
     }
     .menu ul{
       top: 0;
       overflow: hidden;
       background: unset;
       height: unset;
-      margin-left: 40px;
       display: flex;
       flex-flow: row;
       justify-content: flex-end;
+      left: 70px;
     }
   }
   .menu li {
     position: relative;
-    padding: 0 10px;
     text-transform: uppercase;
     color: #ffffff;
   }
@@ -81,7 +81,7 @@ header{
     width: 25px;
     height: 2.5px;
     margin-bottom: 6.5px;
-    margin-right: 10px;
+    margin-right: 2px;
     position: relative;
     background: #000;
     z-index: 1;
@@ -189,7 +189,7 @@ text-align: justify;
     margin-top: 40px;
   }
   .welcome{
-    margin-left: 60px;
+    margin-left: 140px;
   }
   section div h1{
     font-size: 64px;
@@ -263,21 +263,30 @@ line-height: 22px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 80px;
-  padding: 0 100px;
+  grid-row-gap: 80px;
+  place-items: center;
+  margin: 0px 40px;
   }
+  #episodes iframe{
+    width: 484px;
+    }
   #episodes{
     clip-path: polygon(0 10%, 100% 0, 100% 91%, 0% 100%);
     padding: 100px 0;
   }
   #episodes .episodes_container h2{
-    margin-left: 180px;
+    margin-left: 160px;
   }
   #we{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     column-gap: 30px;
+  }
+}
+@media screen and (min-width: 1440px){
+  #episodes iframe{
+    width: 584px;
   }
 }
 /*interviews*/
@@ -322,7 +331,7 @@ line-height: 22px;
     font-weight: 300;
     margin-top: 0px;
     width: 100%;
-    margin-left: 180px;
+    margin-left: 160px;
   }
 }
 /*topics secction*/
@@ -355,7 +364,7 @@ line-height: 22px;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 42px;
-  margin: 20px 20px;
+  margin: 40px 20px;
 }
 @media screen and (min-width: 1200px){
   .topic_icons{
@@ -367,7 +376,8 @@ line-height: 22px;
   #topics h2{
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 48px;
-    margin-left: 180px;
+    margin-left: 160px;
+    margin-top: 50px;
   }
 }
 /*lastest news*/
@@ -435,7 +445,7 @@ footer{
   justify-content: center;
 }
 .social_networks i{
-  padding: 0px 13px;
+  padding: 0px 22.5px;
   font-size: 16px;
   color: black;
  }
@@ -444,7 +454,7 @@ footer{
   font-size: 14px;
   font-weight: 400;
   color: #060A24;
-  letter-spacing: 0;
+  letter-spacing: 3px;
   line-height: 22px;
   line-height: 22px;
   padding: 20px 0px;
